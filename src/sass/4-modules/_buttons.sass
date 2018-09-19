@@ -1,0 +1,33 @@
+.button
+	display: block
+	color: #fff
+	cursor: pointer
+	&_mod_1
+		border: 1px solid #fff
+		text-align: center
+		padding: 0 58px
+		height: 50px
+		line-height: 50px
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 2px
+		transition: background-color .2s
+		&:hover
+			background-color: #282f35 + 13
+	&_submit
+		background-color: #64c29e
+		border: none
+		transition: background-color .1s
+		font-size: 24px
+		text-transform: uppercase
+		font-weight: 300
+		&:hover
+			background-color: #64c29e - 10
+
+@media screen and (max-width: 568px)
+	.button_mod_1
+		width: 90%
+		font-size: 13px
+		font-weight: 400
+		padding: 0

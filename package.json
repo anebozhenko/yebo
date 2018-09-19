@@ -1,0 +1,29 @@
+{
+  "name": "Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "webpack": "webpack"
+  },
+  "keywords": [],
+  "author": "Arseniy Nebozhenko",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "cssnano": "^4.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp-minify": "^3.1.0"
+  }
+}

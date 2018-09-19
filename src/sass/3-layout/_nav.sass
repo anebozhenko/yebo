@@ -1,0 +1,29 @@
+.nav
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&__item
+		text-align: center
+	&__link
+		font-weight: 600
+		font-size: 13px
+		text-transform: uppercase
+		color: #4d4959
+		&:hover
+			color: #4d4959 - 50
+	&__logo
+
+@media screen and (max-width: 786px)
+	.nav
+		flex-wrap: wrap
+		&__item
+			&_logo
+				width: 100%
+				order: -1
+				margin-bottom: 20px
+				
+@media screen and (max-width: 786px)
+	.nav
+		&__logo
+			width: 70px
+

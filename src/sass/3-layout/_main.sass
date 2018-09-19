@@ -1,0 +1,220 @@
+.hero
+	height: 100vh
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+
+.about
+	background-color: #f7f7f7
+	&__inner
+		padding-top: 40px
+		padding-bottom: 40px
+		max-width: 1080px
+		width: 90%
+		margin: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		text-align: center
+		min-height: 470px
+	&__icon
+		width: 52px
+		height: 43px
+		background-repeat: no-repeat
+		margin-bottom: 35px
+	&__title
+		font-size: 18px
+		color: #353738
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3px
+		margin-bottom: 30px
+	&__text
+		font-size: 18px
+		color: #848789
+		line-height: 32px
+
+.work
+	&__section
+		height: 60vh
+		display: flex
+	&__col
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		&_sm
+			width: 33.333%
+		&_bg_contain
+			background-size: contain
+			background-position: center bottom
+		&_lg
+			width: 66.333%
+	&__img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+
+.info-box
+	background-color: #fff
+	min-height: 400px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	position: relative
+	padding: 20px 60px
+	&__icon
+		margin-bottom: 30px
+	&__title
+		text-transform: uppercase
+		font-size: 18px
+		text-align: center
+		color: #353738
+		margin-bottom: 20px
+	&__text
+		line-height: 30px
+		color: #848789
+		margin-bottom: 30px
+	&__line
+		display: block
+		width: 50px
+		height: 1px
+		background-color: #d7d7d7
+		margin-bottom: 20px
+	&__arrow
+		display: block
+		width: 21px
+		height: 10px
+		background-image: url('../img/arrow.png')
+		position: absolute
+		bottom: -10px
+
+@media screen and (max-width: 1490px)
+	.info-box
+		height: 100%
+		&__arrow
+			display: none
+
+@media screen and (max-width: 1024px)
+	.work
+		&__col
+			width: 50%
+			&_sr_dn
+				display: none
+
+@media screen and (max-width: 768px)
+	.work
+		padding: 20px
+		&__inner
+		&__section
+			height: auto
+		&__col
+			text-align: center
+			margin: auto
+			width: 90%
+			&_xsr_dn
+				display: none
+	.info-box
+		min-height: 300px
+		padding: 20px
+		padding-bottom: 0
+		&__line
+			width: 100%
+
+.shop
+	&__inner
+		display: flex
+		min-height: 535px
+	&__col
+		display: flex
+		flex-wrap: wrap
+		width: 33.333%
+	&__photo
+		display: block
+		background-size: cover
+		&_x
+			&_sm
+				width: 50%
+			&_lg
+				width: 100%
+		&_y
+			&_sm
+				height: 50%
+			&_lg
+				height: 100%
+	&__link
+		position: relative
+		background-color: rgba(#6db8a2, .57)
+		transition: background-color .2s
+		font-size: 14px
+		color: #fff
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 1px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		&::after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			background-image: url('../img/shop-link.jpg')
+			background-size: cover
+			top: 0
+			left: 0
+			position: absolute
+			z-index: -1
+		&:hover
+			background-color: rgba(#6db8a2, .8)
+		img
+			margin-bottom: 10px
+
+@media screen and (max-width: 1366px)
+	.shop
+		&__col
+			width: 50%
+			&_mdr_dn
+				display: none
+
+@media screen and (max-width: 786px)
+	.shop
+		&__inner
+			min-height: 280px
+		&__col
+			width: 100%
+			&_xsr_dn
+				display: none
+		&__photo
+			display: none
+		&__link
+			display: flex
+			width: 100%
+			height: 100%
+
+.discover
+	background-color: #282f35
+	&__inner
+		min-height: 200px
+		display: flex
+		align-items: center
+		justify-content: center
+
+.contact
+	&__inner
+		min-height: 470px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__logo
+		margin-bottom: 30px
+	&__title
+		margin-bottom: 30px
+		font-size: 24px
+		color: #848789
+		font-weight: 400
+	&__form

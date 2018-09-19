@@ -1,0 +1,25 @@
+.social
+	display: flex
+	justify-content: center
+	&__item:not(:last-child)
+		margin-right: 15px
+	&__link
+		display: block
+		height: 32px
+		width: 32px
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: background-color .17s ease
+		&_twitter
+			background-color: #78cdf0
+		&_facebook
+			background-color: #537bbd
+		&_pinterest
+			background-color: #eb5755
+		&:hover
+			background-color: #000
+	&__icon
+		width: 20px
+		height: 20px

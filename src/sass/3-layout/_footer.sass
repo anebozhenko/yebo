@@ -1,0 +1,48 @@
+.footer
+	background-color: #f7f7f7	
+	min-height: 250px
+	&__inner
+		min-height: inherit
+		display: flex
+		max-width: 1100px
+		width: 90%
+		margin: auto
+		align-items: center
+		justify-content: space-between
+	&__col
+		width: 30%
+
+.address
+	font-size: 17px
+	color: #848789
+	&__highlighted
+		font-weight: 600
+	&__link
+		color: #848789
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.credit
+	display: flex
+	align-items: center
+	&__text
+		color: #848789
+		font-size: 15px
+		font-style: italic
+		margin-right: 10px
+
+@media screen and (max-width: 786px)
+	.footer
+		&__inner
+			padding-top: 40px
+			padding-bottom: 20px
+			flex-direction: column
+		&__col
+			width: 80%
+			margin-bottom: 20px
+	.address
+		text-align: center
+		width: 80%
+	.credit
+		justify-content: center
